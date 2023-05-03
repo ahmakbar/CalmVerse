@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.project-try {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: white;
+}
+
+.project-try button {
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: .2s all ease-in-out;
+}
+
+.project-try button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.project-try .container-2 {
+    width: 95%;
+    margin: auto;
+}
+
+.project-try .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.project-try .nav button {
+    font-family: inherit;
+    width: 100px;
+}
+
+
+.project-try .create-box {
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.project-try .create-box textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+}
+
+.project-try .create-box button {
+    width: fit-content;
+}
+
+.project-try .flashcards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.project-try .flashcard {
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project-try .flashcard h2 {
+    font-size: 1rem;
+}
+
+@media (max-width:768px){
+    .project-try .flashcard {
+        margin: auto;
+    }
+    
+    .project-try .flashcard {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .project-try .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-try .create-box {
+        width: 100%;
+    }
+
+    .project-try .flashcard {
+        width: 100%;
+    }
+}
